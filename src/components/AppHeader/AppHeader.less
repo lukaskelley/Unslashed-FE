@@ -1,0 +1,127 @@
+@import "../../styles/main.less";
+
+.app-header {
+  .flex-center();
+  padding: 10px !important;
+  height:50px !important;
+  background: #0f0d1e!important;
+  z-index: 99;
+
+  .app-header__content {
+    .flex-center();
+    padding: 20px 0 0 20px;
+    margin: 0px !important;
+    max-width: 1300px !important;
+    .page-title {
+      font-size: 50px;
+      margin-top: 40px;
+      background: linear-gradient(91.26deg, #A9CDFF 0%, #72F6D1 21.87%, #A0ED8D 55.73%, #FED365 81.77%, #FAA49E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .app-header__logo {
+      height: 40px;
+    }
+    
+    .app-header__menu {
+      width: 1300px;
+      margin-left: 10px;
+      color: white;
+      font-size: medium;
+      font-weight: bold;
+    
+      background: transparent;
+      border-bottom: none;
+      line-height: 40px;
+
+      text-align: right;
+
+   
+      .app-header__menu-icon {
+        font-size: 1.5rem;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        margin: auto;
+    
+        &:hover {
+          color:white !important;
+        }
+      }
+      .ant-menu-item {
+        border-bottom: 0px !important;
+        color: #00ffb4 !important;
+        &:hover {
+          color: #00ffb4 !important;
+        }
+        .app-header__menu-item{
+          color: white;
+          &:hover {
+            color: #00ffb4 !important;
+          }
+          .arrow {
+            &:hover {
+              color: #00ffb4 !important;
+            }
+          }
+        }
+
+      } 
+    }
+  }
+}
+
+.ant-menu-submenu {
+  border-bottom: 0px !important;
+  &:hover {
+    color: #00ffb4 !important;
+  }
+}
+.ant-menu-submenu-title {
+  &:hover {
+    color: #00ffb4 !important;
+  }
+}
+.ant-menu-vertical {
+  border-bottom: 0px !important;
+  background: linear-gradient(181.12deg,rgba(119,113,135,.2) .96%,rgba(119,113,135,0) 139.33%) !important;
+  border-radius: 10px !important;
+  color: #777187 !important;
+ 
+  .community__menu {
+    &:hover {
+      color: #00ffb4 !important;
+    }
+  }
+
+  .community__menu-item {
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.use-app__button_div {
+  margin-left: 500px !important;
+}
+.use-app__button {
+  margin-top: 20px;
+  background-color: #4f3cc8 !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  width: 115px !important;
+  height: 47px !important;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: #7f6fe7 !important;
+    color: white !important;
+  }
+}
+
+
+
