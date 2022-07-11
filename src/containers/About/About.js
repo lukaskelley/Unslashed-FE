@@ -1,9 +1,14 @@
 import React from 'react';
 import { Col, Row } from 'antd';
-import { Button } from 'antd';
+import { Button} from 'antd';
 import { Container } from "../../components/Container/Container";
 import { BoxCard } from './BoxCard/BoxCard';
+import {SimpleSlider} from './Slider/Slider'
 import { BrandCard } from './BrandCard/BrandCard';
+import { CommunityBox } from './CommunityBox/CommunityBox';
+import {  Menu } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
+
 
 import AtomsBoxLogo from "../../assets/icon/AtomsBoxLogo.svg"
 import GreenArrowUp from "../../assets/icon/GreenArrowUp.svg"
@@ -21,7 +26,21 @@ import Enzyme from "../../assets/icon/brand/Enzyme.png"
 import Techemy from "../../assets/icon/brand/Techemy.svg"
 import apophis from "../../assets/icon/brand/apophis.png"
 
+import Yield from "../../assets/icon/Yield.svg"
+import ArrowUpRight from "../../assets/icon/ArrowUpRight.svg"
 
+import axa from "../../assets/team/axa.png"
+import Maker from "../../assets/team/Maker.png"
+import CITI from "../../assets/team/CITI.png"
+import EventBrite from "../../assets/team/EventBrite.png"
+import Veracity from "../../assets/team/Veracity.png"
+import ArrowWithLine from "../../assets/form/ArrowWithLine.svg"
+import logoIcon from "../../assets/header/Logo.svg"
+
+import Discord from "../../assets/footer/Discord.svg"
+import Telegram from "../../assets/footer/Telegram.svg"
+import Twitter from "../../assets/footer/Twitter.svg"
+import Medium from "../../assets/footer/Medium.svg"
 
 
 import "./About.less"
@@ -35,8 +54,8 @@ export const About = () => {
           <Col xs={24} sm={20} md={12} lg={20} >
             <div className="Title_container__2mvXU">
               <span className="h7 Title_welcome__19ogG">WELCOME TO UNSLASHED</span>
-              <h1 class="Title_title__2ve3b">Insurance for Decentralized Finance</h1>
-              <span class="h5 Title_trusted__3IHmb">Trusted by institutions and DeFi power users to keep their assets secure.</span>
+              <h1 className="Title_title__2ve3b">Insurance for Decentralized Finance</h1>
+              <span className="h5 Title_trusted__3IHmb">Trusted by institutions and DeFi power users to keep their assets secure.</span>
               <Row className='insured__earn_contain'>
                 <Button className='use-app__button'>Get Insured</Button>
                 <Button className='Earn_Yield'>Earn Yield</Button>
@@ -84,11 +103,11 @@ export const About = () => {
                   icon={AtomsBoxLogo}
                   title="Validators slashing"
                 />
-                <div class="Boxs_learnAboutBorder">
-                  <div class="Boxs_learnAboutContainer">
-                    <span class="Boxs_learnAboutText">Learn about their
+                <div className="Boxs_learnAboutBorder">
+                  <div className="Boxs_learnAboutContainer">
+                    <span className="Boxs_learnAboutText">Learn about their
                     <span>Spartan Bucket</span>and how it works</span>
-                    <div class="Boxs_CTAContainer">
+                    <div className="Boxs_CTAContainer">
                       <img src={GreenArrowUp} alt="green arrow up"/>
                     </div>
                   </div>
@@ -132,8 +151,8 @@ export const About = () => {
           <Col xs={24} sm={20} md={12} lg={20} >
             <div className="Title_container__2mvXU">
               <span className="h7 Title_welcome__19ogG">SIGNAL STRENGTH</span>
-              <h2 class="Partnerships_title">Insurance for protocols, DAO’s and institutions</h2>
-              <span class="Partnerships_paragraph">The Unslashed Finance protocol insures some of the most respected entities in the DeFi movement.</span>
+              <h2 className="Partnerships_title">Insurance for protocols, DAO’s and institutions</h2>
+              <span className="Partnerships_paragraph">The Unslashed Finance protocol insures some of the most respected entities in the DeFi movement.</span>
             </div>
           </Col>
         </Row>
@@ -173,8 +192,9 @@ export const About = () => {
             </Col>           
           </Row>
       </Container>
-      <a href="https://blog.lido.fi/lido-unslashed-finance-partner-to-insure-ethereum-staking-service/  " class="Partnerships_readAboutContainer">
-        <span class="Partnerships_readAboutText">Read about our $200M partnership with Lido Finance</span>
+
+      <a href="https://blog.lido.fi/lido-unslashed-finance-partner-to-insure-ethereum-staking-service/  " className="Partnerships_readAboutContainer">
+        <span className="Partnerships_readAboutText">Read about our $200M partnership with Lido Finance</span>
         <img src={GreenArrowUp} alt="green arrow"/>
       </a>
 
@@ -182,13 +202,144 @@ export const About = () => {
         <Row gutter={[24, 24]} justify="center">
           <Col xs={24} sm={20} md={12} lg={20} >
             <div className="Title_container__2mvXU">
-              <span className="h7 Title_welcome__19ogG">SIGNAL STRENGTH</span>
-              <h2 class="Partnerships_title">Insurance for protocols, DAO’s and institutions</h2>
-              <span class="Partnerships_paragraph">The Unslashed Finance protocol insures some of the most respected entities in the DeFi movement.</span>
+              <span className="h7 Title_welcome__19ogG">ACTIVE INVOLVEMENT</span>
+              <h2 className="Community_title">Participate in the community</h2>
+              <span className="Community_paragraph">Choose your level of engagement. You can supply capital to earn yield, govern the protocol, or build on top of it.</span>
             </div>
           </Col>
         </Row>
+        <Row gutter={[24, 24]} justify="center" className='Community'>
+          <Col xs={24} sm={20} md={12} lg={8} >
+              <div className="Community_earnYieldContainer">
+                  <img src={Yield} alt="Yield Logo" className="Community_yieldLogo"/>
+                <div className="Community_yieldTitle">
+                  <span className="Community_yieldTitleText">Earn Yield<img className="Community_arrowUp" src={ArrowUpRight} alt="arrow up right icon"/></span>
+                  <span className="Community_yieldParagraph">Supply capital, earn up to 24% APY.</span>
+                </div>
+              </div>
+          </Col>
+          <Col xs={24} sm={20} md={12} lg={4} >
+          </Col>
+          <Col xs={24} sm={20} md={12} lg={12} >
+            <CommunityBox 
+              className="Community_developersLineGraphic"
+              title="Developers"
+              content="Build, create and innovate"
+            />
+            <CommunityBox 
+              className="Community_developersLineGraphic2"
+              title="Join the DAO"
+              content="Shape the future of insurance"
+            />
+          </Col>
+        </Row>
       </Container>
+
+      <Container className="team">
+        <div className="Team_workedOnContainer">
+          <span className="Team_workedAtText">
+            <div className="Team_line"></div>We’ve worked at top tier companies like:
+          </span>
+          <div className="Team_companies">
+            <img style={{height:"41px"}} className="Team_companyLogo" src={axa} alt="AxaIm Investment Managers logo"/>
+            <img style={{width:"64px" }}className="Team_companyLogo" src={Maker} alt="Maker logo"/>
+            <img style={{width:"59px" }} className="Team_companyLogo" src={CITI} alt="CITI logo"/>
+            <img style={{width:"132px" }}className="Team_companyLogo" src={EventBrite} alt="EventBrite logo"/>
+            <img style={{width:"136px" }} className="Team_companyLogo" src={Veracity} alt="Vercity logo"/>
+          </div>
+        </div>
+      </Container>
+      
+      <Container className="slider">
+         <SimpleSlider />
+      </Container>
+
+      <Container className="tech">
+        <div className="Tech_container">
+          <span className="Tech_title">Technology Stack</span>
+          <div className="Tech_logoContainer">
+            <div href="https://ethereum.org/" className="Tech_ethereum"></div>
+            <div href="https://enzyme.finance/" className="Tech_enzyme"></div>
+            <div href="https://kleros.io/" className="Tech_kleros"></div>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="form">
+        <div className="Form_container">
+          <span className="h7">JOIN OUR NEWSLETTER</span>
+          <span className="Form_title">Stay updated on all things Unslashed</span>
+          <span className="Form_unsubscribe">You can unsubscribe at any time.</span>
+          <div className="Form_inputContainer">
+            <div className="Input_container">
+            <input placeholder="Enter your email" className="Input_input" value=""/>
+              <div className="Button_container Button_primary" style={{padding:"16.5px"}}>
+                <div className="">
+                  <div className="Button_innerContainer">
+                   <img src={ArrowWithLine} alt="arrow right icon"/>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="footer">
+        <Row gutter={[24, 24]} justify="center" className='contain_footer'>
+          <Col xs={24} sm={20} md={12} lg={8} className="logo">
+            <img style={{margin:"20px"}}src={logoIcon} alt="logo"/>
+          </Col>
+          <Col xs={24} sm={20} md={12} lg={8}  className="connecttype">
+            <Row>
+              <Col xs={6} sm={20} md={12} lg={6} >
+              <div className="tooltip">
+                <img className="Footer_mediaLogo" src={Discord} alt="Discord Icon"/><span className="tooltiptext">Discord</span>
+              </div>
+              </Col> 
+              <Col xs={6} sm={20} md={12} lg={6}>
+                <div className="tooltip">
+                <img className="tooltip Footer_mediaLogo" src={Twitter} alt="Twitter Icon"/><span className="tooltiptext">Twitter</span></div></Col>        
+                <Col xs={6} sm={20} md={12} lg={6} >
+                  <div className="tooltip">
+                  <img className="tooltip Footer_mediaLogo" src={Telegram} alt="Telegram Icon"/><span className="tooltiptext">Telegram</span></div>
+                </Col>        
+                <Col xs={6} sm={20} md={12} lg={6} >
+                <div className="tooltip">
+                <img className="tooltip Footer_mediaLogo" src={Medium} alt="Medium Icon"/><span className="tooltiptext">Medium</span></div>
+              </Col>        
+            </Row>
+          </Col>
+          <Col xs={24} sm={20} md={12} lg={8} className="earn_yield_contain">
+            <Row>
+              <Menu
+              className="app-header__menu"
+              mode={"horizontal"}
+              overflowedIndicator={<MenuOutlined className="app-header__menu-icon" />}
+                >
+                <Menu.SubMenu key="SubMenu" title="Audits" className='link__menu'>
+                    <Menu.Item key="two" className='community__menu-item'>
+                     Audits #1
+                    </Menu.Item>
+                    <Menu.Item key="three" className='community__menu-item'>
+                     Audits #2
+                    </Menu.Item>
+                    <Menu.Item key="fourr" className='community__menu-item'>
+                      Audits #3
+                    </Menu.Item>
+                </Menu.SubMenu>
+              </Menu>
+              <Button className='Get_usf_token'>Get USF Token</Button>
+            </Row>
+          </Col>
+        </Row>
+        <div className='Footer_copyright'>
+          <span className="Footer_copyright">© 2021 Unslashed Finance | All rights reserved.</span>
+        </div>
+      </Container>
+
+
+      
     </section>
   )
 }

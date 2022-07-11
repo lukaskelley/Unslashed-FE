@@ -6,16 +6,16 @@ export const BrandCard = (props) => {
   const { icon, title } = props;
 
   return (
-    <div class="Brands_brandContainer">
-      <div class="Brands_logoWithText">
-        <div class="Brands_logoContainer">
-          <img class="Brands_logo" src={icon} alt="Paraswap logo"/>
+    <div className="Brands_brandContainer">
+      <div className="Brands_logoWithText">
+        <div className="Brands_logoContainer">
+          <img className="Brands_logo" src={icon} alt="Paraswap logo"/>
         </div>
-        <span class="Brands_name">{title}</span>
+        <span className="Brands_name">{title}</span>
       </div>
-      <div class="Brands_learnMoreContainer">
-        <span class="Brands_learnMore">Learn more</span>
-        <img class="Brands_learnMoreSvg" src={ArrowRight} alt="arrow right"/>
+      <div className="Brands_learnMoreContainer">
+        <span className="Brands_learnMore">Learn more</span>
+        <img className="Brands_learnMoreSvg" src={ArrowRight} alt="arrow right"/>
       </div>
     </div>
   )

@@ -1,8 +1,7 @@
 @import "../../styles/main.less";
 
-
 .Welcome {
-    padding: 0 15px !important;
+    padding: 1rem 15px !important;
    
 }
 
@@ -259,7 +258,7 @@
 }
 
 .signal_strength {
-    padding: 1rem 15px !important;
+    padding: 2rem 15px !important;
 
     .Partnerships_title {
         max-width: 590px;
@@ -308,7 +307,88 @@
         border-radius: 25px;
     }
 }
+
+.active_involvement {
+    padding: 1rem 15px !important;
+
+    .Community {
+        padding: 80px;
+    }
+    .Community_title {
+        margin-top: 20px;
+        font-size: 48px;
+        line-height: 130%;
+        font-family: Poppins,sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    .Community_paragraph {
+        max-width: 562px;
+        text-align: center;
+        font-family: Poppins,sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: .5px;
+        color: #b4b4c7;
+    }
+
+    .Community_earnYieldContainer {
+        cursor: pointer;
+        padding: 32px;
+        width: 387px;
+        height: 409.02px;
+        background: linear-gradient(123.71deg,#fff,rgba(189,179,255,0) 50.21%),linear-gradient(122.69deg,#8769ff 8.82%,#67ffd5 109.84%);
+        box-shadow: inset 0 4px 30px 10px rgb(84 52 208 / 50%);
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        border-radius: 25px;
+
+        .Community_yieldLogo {
+            width: 344px;
+            height: 293px;
+            margin-left: -21px;
+            margin-top: -81px;
+        }
+
+        .Community_yieldTitle {
+            display: flex;
+            flex-direction: column;
+
+            .Community_yieldTitleText {
+                font-family: Poppins,sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                letter-spacing: .5px;
+                color: #191531;
+                font-size: 32px;
+                line-height: 33px;
+            }
+            .Community_arrowUp{
+                margin-left: 12px;
+            }
+            .Community_yieldParagraph {
+                max-width: 205px;
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 25px;
+                font-style: normal;
+                font-weight: 500;
+                letter-spacing: .5px;
+                color: #191531;
+            }
+        }
+    }
+}
+
 .Partnerships_readAboutContainer {
+    padding: 1rem 15px !important;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,11 +409,13 @@
         letter-spacing: .5px;
         color: #fff;
         &:hover {
-            transition: margin .2s ease-in !important;
+            transition: .3s ease-in !important;
             border-bottom: 1px solid white;
+            padding-right: 12px;
         }
     }
 }
+
 
 
 
@@ -352,7 +434,308 @@
         display: none !important;
     }
 }
-@media (max-width: 450px){
+
+
+.team {
+    .Team_workedOnContainer {
+        display: flex;
+        margin-top: 58px;
+
+        .Team_workedAtText {
+            display: flex;
+            max-width: 246px;
+            font-family: Poppins,sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: .5px;
+            height: 50px;
+            color: #dadaeb;
+
+            .Team_line {
+                margin-right: 15px;
+                width: 4px;
+                background: linear-gradient(179.97deg,#67ffd5 -61.13%,#bdb3ff 159.45%);
+            }
+        }
+
+        .Team_companies {
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            margin-left: 136px;
+            opacity: .2;
+
+            .Team_companyLogo {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+
+.tech {
+    padding: 0px;
+    .Tech_container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 108px;
+        margin-bottom: 212px;
+
+        .Tech_title {
+            font-family: Poppins,sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: .5px;
+            color: #fff;
+        }
+        .Tech_logoContainer {
+            display: flex;
+            align-items: center;
+            margin-top: 63px;
+            margin-left: 193px;
+            max-width: 716px;
+            width: 100%;
+
+            .Tech_ethereum {
+                display: block;
+                background-blend-mode: darken,normal;
+                margin: 0 30px;
+                width: 197px;
+                height: 49px;
+                background: url(../../assets/tech/ethereum-default.png) no-repeat 50%;
+                background-size: contain;
+
+            }
+
+            .Tech_enzyme {
+                display: block;
+                background-blend-mode: darken,normal;
+                margin: 0 30px;
+                width: 198px;
+                height: 31px;
+                background: url(../../assets/tech/enzyme-default.png) no-repeat 50%;
+                background-size: contain;
+            }
+
+            .Tech_kleros {
+                display: block;
+                background-blend-mode: darken,normal;
+                margin: 0 30px;
+                width: 152px;
+                height: 52px;
+                background: url(../../assets/tech/kleros-default.png) no-repeat 50%;
+                background-size: contain;
+            }
+        }
+    }
+}
+
+.form {
+    padding: 0px;
+    .Form_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1119px;
+        width: 100%;
+        background: linear-gradient(181.12deg,rgba(119,113,135,.15) .96%,rgba(119,113,135,0) 139.33%);
+        border: 1px solid #4c4768;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 63px 0;
+        margin-bottom: 156px;
+
+        .h7 {
+            font-family: Poppins,sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            display: flex;
+            text-align: center;
+            letter-spacing: 1.5px;
+            color: #4d495d;
+        }
+        .Form_title {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            font-family: Poppins,sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: .5px;
+            color: white;
+        }
+        .Form_unsubscribe {
+            font-family: Poppins,sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: .5px;
+            color: #b4b4c7;
+        }
+    }
+    .Form_inputContainer {
+        max-width: 518px;
+        width: 100%;
+        margin-top: 74px;
+
+        .Input_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 57px;
+            width: 100%;
+            background: linear-gradient(182.67deg,rgba(119,113,135,.15) -113.79%,rgba(119,113,135,0) 238.53%);
+            border: 1px solid #4c4768;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 16px 0 16px 16px;
+
+            .Input_input {
+                font-family: Poppins,sans-serif;
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+                color: #fff;
+                width: 100%;
+                outline: none;
+            }
+
+            .Button_container{
+                flex-direction: row;
+                background: #4f3cc8;
+                border-radius: 10px;
+                &:hover {
+                background: #6251d1;
+
+                }
+
+                .Button_innerContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            } 
+        }
+    }
+
+}
+
+.footer {
+    align-items: center;
+    .contain_footer {
+        border-bottom: 1px solid rgb(92, 91, 91);
+    }
+    .ant-menu {
+        background: transparent;
+        border: none;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        filter: invert(52%) sepia(11%) saturate(593%) hue-rotate(215deg) brightness(84%) contrast(86%);
+    }
+
+    .Footer_mediaLogo {
+        margin-top: 25px;
+        filter: invert(52%) sepia(11%) saturate(593%) hue-rotate(215deg) brightness(84%) contrast(86%) !important;
+        &:hover {
+         filter: invert(72%) sepia(11%) saturate(593%) hue-rotate(215deg) brightness(100%) contrast(96%) !important;
+        }
+    }
+    .Get_usf_token {
+        margin-top: 20px;
+        margin: 20px;
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+        border: solid 1px transparent !important;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa) !important;
+        background-origin: border-box  !important;
+        background-clip: content-box, border-box  !important;
+        box-shadow: 2px 1000px 1px #0f0d1e inset  !important;
+        color: white !important;
+        border-radius: 10px !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        width: 155px !important;
+        height: 47px !important;
+        justify-content: center;
+        align-items: center;
+      
+        &:hover {
+        box-shadow: 2px 1000px 1px #221e41 inset  !important;
+          color: white !important;
+        }
+    }
+
+    .earn_yield_contain {
+        padding: 0px;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 100px;
+        font-weight: 500;
+        background-color: rgba(168, 166, 172, 0.15);
+        color: rgb(129, 125, 125);
+        text-align: center;
+        border-radius: 6px;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -50px;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .connecttype {
+        text-align: center;
+      }
+
+      .Footer_copyright {
+        width: 100%;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        margin-top: 28px;
+        margin-bottom: 61px;
+        letter-spacing: .05em;
+        color: #4d495d;
+      }
+}
+
+.slider {
+    padding: 10rem !important;
+    .slick-slide {
+        padding-top: 50px !important;
+    }
+
+}
+@media (max-width: 799px){
+    .assets .middle__box {
+        margin-top: 0px !important;
+    }
     .safeguard_assets {
         margin-left: 80px !important;
     }
@@ -366,6 +749,124 @@
     .box__card {
         width: 100%;
     }
+    .Partnerships_readAboutContainer {
+        padding: 40px !important;
+    }
+    .active_involvement {
+        padding: 0px !important;
+    }
+    .active_involvement .Community {
+        padding: 0px !important;
+    }
+    .Tech_ethereum , .Tech_enzyme, .Tech_kleros{
+        width: 250px;
+        padding-top: 80px;
+    }
+    .Tech_logoContainer {
+        margin-left: 0px !important;
+        flex-direction: column;
+    }
+
+    .Team_workedOnContainer {
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 16px;
+    }
+    .Team_companies {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .Community_earnYieldContainer {
+        width: 100%;
+        margin-bottom: 16px;
+        height: 351px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .active_involvement {
+        padding: 30px !important;
+
+        .Community_developersContainer {
+            width: 315px !important;
+        }
+        .Community_earnYieldContainer {
+            width: 315px !important;
+            .Community_yieldLogo {
+                width: 310px !important;
+            }
+        }
+    }
+
+    .slider {
+        padding: 0px !important;
+    }
+
+    .Team_companyLogo {
+        padding: 5px !important;
+    }
+    .Form_container {
+        padding: 42px 16px !important;
+        margin-bottom: 40px !important;
+    }
+    .connecttype {
+        display: flex;
+    }
+    .Footer_mediaLogo {
+        margin: 4px;
+    }
+
+    .link__menu {
+        display: none !important;
+    }
+
+    .app-header__menu-item, .ant-menu-submenu-arrow {
+        color: white !important;
+    }
+    .ant-menu-submenu-title {
+        color: white !important;
+    }
+
+    .footer {
+        padding: 0 !important;
+    }
+
+    .logo {
+        display: none !important;
+    }
+
+    .tech {
+        padding: 2px !important;
+    }
+    
+    .form {
+        padding: 30px;
+    }
+
+    .team {
+        padding: 3px;
+    }
+
+    .earn_yield_contain {
+        margin-left: 180px !important;
+    }
+
+    .Team_workedOnContainer {
+        flex-direction: column !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        padding-left: 16px !important;
+
+        .Team_workedAtText {
+            max-width: 246px !important;
+        }
+
+        .Team_companies {
+            justify-content: center !important;
+            flex-wrap: wrap !important;
+            margin: 0 !important;
+        }
+    }
 }
-
-
